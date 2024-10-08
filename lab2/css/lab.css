@@ -1,4 +1,12 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
+div#body{
+  padding: 10px;
+  margin-bottom: 10px;
+  text-indent: 10%
+  
+  background-color #479761
+}
+
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
