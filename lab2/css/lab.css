@@ -1,17 +1,31 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
-div#body{
-  padding: 10px;
-  margin-bottom: 10px;
-  text-indent: 10%
-  
-  background-color #479761
+
+body {
+  background-color:pink
+}
+h1 {
+  color:darkblue;
+}
+h2 {
+  color:darkgreen
+}
+p{
+  color:rgb(107, 19, 139)
+}
+/* for hello world only */
+.boxy {
+    padding: 40px;
+    margin-bottom: 30px;
+    border: solid 1px #4ff9cc;
+    background-color: #f7db67;
 }
 
-
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" for index only */
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
+    border: solid 1px #ffd4ff;
     background-color: #DDD8C4;
+
   }
+  
