@@ -1,31 +1,46 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
+body {
+  font-family: 'Courier New', monospace;
+}
 
 body {
   background-color:pink
 }
+
 h1 {
   color:darkblue;
 }
+
 h2 {
   color:darkgreen
 }
+
 p{
-  color:rgb(107, 19, 139)
+  color:rgb(45, 3, 60)
 }
+
 /* for hello world only */
 .boxy {
     padding: 40px;
     margin-bottom: 30px;
-    border: solid 1px #4ff9cc;
-    background-color: #f7db67;
+    border: solid 1px #a6efdb;
+    background-color: #e8fac3;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" for index only */
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #ffd4ff;
-    background-color: #DDD8C4;
+    border: solid 1px #b80015;
+    background-color: #fee4f7;
 
   }
-  
+
+  img {
+    border-radius: 8px;
+  }
+
+  .center {
+    text-align: center;
+    border: 3px solid rgb(156, 23, 136);
+  }
