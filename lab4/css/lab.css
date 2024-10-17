@@ -1,9 +1,22 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
+h1, h2, h3, h4 {
+  font-family: 'Londrina Sketch', cursive;
+  font-weight: bold;
+  margin: 0;
+}
+
+body {
+  font-family: Helvetica, Verdana, Arial, "san serif";
+  background-color: rgb(210, 140, 163);
+  padding: 25px;
+  font-size: 120%;
+}
+
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 1px #000000;
+    background-color: #f5d1e2;
   }
