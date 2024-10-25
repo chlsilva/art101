@@ -10,6 +10,7 @@ myMainRide = {
   make:"Chevy",
   madel: "Volt",
   color: "red",
+  cdplayer: "yes",
   year: 2013,
 
   age: function() {
@@ -20,7 +21,7 @@ myMainRide = {
 // output
 document.writeln("Kinds of transportation I use: ", myTransport, "</br>");
 
-document.writeln("My Main Ride: <pre>",
+document.writeln("My Main Ride: Chevy Volt <pre>",
   JSON.stringify(myMainRide, null, '\t'), "</pre>");
 
 
