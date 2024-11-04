@@ -1,0 +1,27 @@
+
+
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #f7ccec;
+}
+
+h1, h2 {
+  font-family: 'Londrina Sketch', cursive;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+#challenge, #problem, #results, #reflection {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #69005d;
+}
+
+
+.special {
+  background-color: lavender;
+  border: dotted 5px red;
+  color: pink;
+  font-weight: bold;
+}
