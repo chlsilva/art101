@@ -2,7 +2,7 @@
 // Author: chloe silva
 // Requirements: jQuery must be loaded for this script to work.
 // Date: nov 11 2024
-// Constants
+
 
 // Functions
 
