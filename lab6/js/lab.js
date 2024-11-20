@@ -10,8 +10,10 @@ myMainRide = {
   make:"Chevy",
   madel: "Volt",
   color: "red",
-  cdplayer: "yes",
+  cdPlayer: "yes",
   year: 2013,
+  numberOfSeats: "4",
+  miles: "82,000",
 
   age: function() {
     return 2024 - this.year;
