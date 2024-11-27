@@ -1,11 +1,23 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
+body {
+  font-family: 'Courier New', monospace;
+}
+
+body {
+  background-color: #e593d4;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Londrina Sketch', cursive;
+  font-weight: bold;
+  margin: 0;
+}
+
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 1px #434343;
+    background-color: #f7ccec;
   }
-
- 
