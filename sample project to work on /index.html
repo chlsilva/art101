@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Project</title>
+    <link rel="stylesheet" href="css/site.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/site.js" defer></script>
+</head>
+<body>
+    <main id="content">
+        <h1>Pie Project</h1>
+    </main>
+    <div class="container">
+        <div class="center2">
+            <img src="./img/placeholder.jpg" alt="placeholder pie" width="215px" height="298px" id="pie-image">
+        </div>
+        <div class="center1">
+            <button onclick="nextPie()">Next Pie</button>
+        </div>
+        <!-- Initially hidden pie description -->
+        <div class="box" id="pie-description" style="display: none;">
+            <h1 id="pie-name"></h1>
+            <h2>Ingredients:</h2>
+            <ul id="pie-ingredients"></ul>
+            <h2>Directions:</h2>
+            <p id="pie-directions"></p>
+        </div>
+    </div>
+</body>
+</html>
