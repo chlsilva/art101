@@ -25,4 +25,4 @@ $(document).ready(function () {
             $("#output").text("Failed to load the Astronomy Picture of the Day.");
         }
     });
-});
+});   
