@@ -4,31 +4,25 @@
 // Date: nov 29 2024
 
 $(document).ready(function () {
-  // API Endpoint
-  const url = "https://xkcd.com/info.0.json";
+    const apiKey = "LKzwgsNmBCc24namABcGYgv7v8MFAxc0PUGBltOr"; // Replace with your API key
+    const endpoint = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
 
-  // AJAX Request
-  $.ajax({
-      url: "https://xkcd.com/info.0.json",
-      type: "GET",
-      dataType: "json",
-
-      success: function (comicObj) {
-          // Log data for debugging
-          console.log(comicObj);
-
-          // Build HTML output
-          const comicHTML = `
-              <h3>${comicObj.title}</h3>
-              <img src="${comicObj.img}" alt="${comicObj.alt}" title="${comicObj.alt}">
-          `;
-
-          // Append to output div
-          $("#output").html(comicHTML);
-      },
-      error: function (jqXHR, textStatus, errorThrown) {
-          console.error("Error:", textStatus, errorThrown);
-          $("#output").html("<p>Failed to fetch comic.</p>");
-      }
-  });
+    $.ajax({
+        url: endpoint,
+        method: "GET",
+        success: function (data) {
+            console.log(JSON.stringify(data)); // Print JSON to console
+            // Parse and display data
+            $("#output").append(`
+                <h2>${data.title}</h2>
+                <p>${data.date}</p>
+                <img src="${data.url}" alt="${data.title}" style="max-width:100%;"/>
+                <p>${data.explanation}</p>
+            `);
+        },
+        error: function (error) {
+            console.log("Error:", error);
+            $("#output").text("Failed to load the Astronomy Picture of the Day.");
+        }
+    });
 });
