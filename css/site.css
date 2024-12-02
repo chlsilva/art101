@@ -5,7 +5,6 @@
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 
 body {
-  background-image: url("pinkbackground.jpg");
   background-color: #89006d;
   font-family: 'Courier New', monospace;
  }
@@ -20,7 +19,6 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("pinkbackground.jpg");
 
   /* Full height */
   height: 100%;

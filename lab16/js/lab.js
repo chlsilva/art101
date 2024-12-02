@@ -1,21 +1,34 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - lab 16: JSON and APIs
+// Author: chloe silva
+// Requirements: jQuery must be loaded for this script to work.
+// Date: nov 29 2024
 
-// Constants
+$(document).ready(function () {
+  // API Endpoint
+  const url = "https://xkcd.com/info.0.json";
 
-// Functions
+  // AJAX Request
+  $.ajax({
+      url: "https://xkcd.com/info.0.json",
+      type: "GET",
+      dataType: "json",
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+      success: function (comicObj) {
+          // Log data for debugging
+          console.log(comicObj);
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+          // Build HTML output
+          const comicHTML = `
+              <h3>${comicObj.title}</h3>
+              <img src="${comicObj.img}" alt="${comicObj.alt}" title="${comicObj.alt}">
+          `;
 
-// let's get this party started
-main();
+          // Append to output div
+          $("#output").html(comicHTML);
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+          console.error("Error:", textStatus, errorThrown);
+          $("#output").html("<p>Failed to fetch comic.</p>");
+      }
+  });
+});
